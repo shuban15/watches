@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timepiece Emporium | Luxury Watches</title>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">Timepiece Emporium</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" id="cart-icon">
+            <i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <h1>Craftsmanship on Your Wrist</h1>
+        <p>Explore our curated collection of luxury and vintage timepieces.</p>
+        <a href="#shop" class="btn-primary">Shop Now</a>
+    </section>
+
+    <section id="shop" class="product-grid-section">
+        <h2>Featured Collection</h2>
+        <div class="product-grid">
+
+            <div class="product-card" data-name="Classic Chrono" data-price="5500">
+                <img src="chrono web.jpg" alt="Classic Chronograph Watch">
+                <h3>Classic Chrono</h3>
+                <p class="price">$5,500</p>
+                <button class="btn-secondary add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Minimalist Dress" data-price="1200">
+                <img src="minimalist.jpg" alt="Minimalist Dress Watch">
+                <h3>Minimalist Dress</h3>
+                <p class="price">$1,200</p>
+                <button class="btn-secondary add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-name="Sport Diver" data-price="8999">
+                <img src="driver.jpg" alt="Sport Diver Watch">
+                <h3>Sport Diver</h3>
+                <p class="price">$8,999</p>
+                <button class="btn-secondary add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-name="Skeleton Automatic" data-price="3450">
+                <img src="auto watch.jpg" alt="Automatic Skeleton Watch">
+                <h3>Skeleton Automatic</h3>
+                <p class="price">$3,450</p>
+                <button class="btn-secondary add-to-cart">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-items">
+                <p class="empty-cart-message">Your cart is empty.</p>
+            </div>
+            <div class="cart-summary">
+                <p>Total: <span id="cart-total">$0.00</span></p>
+            </div>
+            <button class="btn-primary checkout-btn" onclick="alert('Checkout initiated! (Requires back-end system)')">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Timepiece Emporium. All rights reserved.</p>
+    </footer>
+
+    <script src="watch.js"></script>
+</body>
+</html>
